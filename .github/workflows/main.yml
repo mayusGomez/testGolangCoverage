@@ -1,4 +1,4 @@
-on: [push]
+on: [workflow_dispatch]
 
 jobs:
   build:
@@ -22,8 +22,8 @@ jobs:
       with:
         go-version: 1.16
 
-    - id: run-coverage
-      uses: actions/golang-cover-action@v1
+    - id: run-coverage-action
+      uses: mayusGomez/golang-cover-action@v1
       with:
         project-folder: 'project'
         pakage-to-check: './sender'
