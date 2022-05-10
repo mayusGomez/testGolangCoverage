@@ -23,7 +23,7 @@ jobs:
         go-version: 1.16
 
     - id: run-coverage-action
-      uses: mayusGomez/golang-cover-action@v1
+      uses: mayusGomez/golang-cover-action@v2
       with:
         project-folder: 'project'
         pakage-to-check: './sender'
