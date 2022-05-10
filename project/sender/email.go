@@ -8,6 +8,6 @@ func NewEmail() Sender {
 }
 
 func (email *Email) Send(text string) error {
-	log.Println("Email sent")
+	log.Println("Email sent.")
 	return nil
 }
