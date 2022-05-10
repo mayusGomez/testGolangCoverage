@@ -22,7 +22,7 @@ jobs:
       with:
         go-version: 1.16
 
-    - name: run coverage
+    - id: run-coverage
       uses: actions/golang-cover-action@v1
       with:
         project-folder: 'project'
